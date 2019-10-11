@@ -1,0 +1,27 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e-test:debug": "npx mkdirp ./tests_output/reports/screenshots && node --inspect-brk node_modules/.bin/cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty  --format json:tests_output/reports/cucumber_report.json",
+    "test-nighwatch": "Nightwatch",
+    "e2e-test": "npx mkdirp ./tests_output/reports/screenshots && cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:tests_output/reports/cucumber_report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "chai": "^4.2.0",
+    "chromedriver": "^77.0.0",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^1.5.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^1.2.4",
+    "nightwatch-api": "^2.3.0",
+    "selenium-standalone": "^6.16.0"
+  },
+  "dependencies": {}
+}

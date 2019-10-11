@@ -1,0 +1,4 @@
+node_modules
+*.log
+steps_output/reports/*
+steps_output/reports/screenshots/*
